@@ -1,0 +1,304 @@
+#results{
+    font-family:"raleway";
+    margin-top: 3em;
+}
+
+#results h2{
+ margin-left: 4.5%;
+}
+
+.photo img{
+    width: 100%;    /*section qui met les photo a la bonne taille : les photos prennent 100% de la place donné*/
+    height: 100%;
+    object-fit: cover;
+}
+#results a{
+    text-decoration: none;
+    color: black;
+}
+
+#results .items{  /* le contener contien tous le bloc hebergement à marseille bb */ 
+    background-color: #F2F2F2;
+    width: 66%;
+    border-radius: 20px;
+}
+
+#results .pack {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1); 
+    border-radius: 20px;
+}
+
+#results .content-photo{ /* content-photo contient tout les blocs de chaque location. on place les photos en ligne et en colonne avec un espacement entre elle*/
+    display: grid;            
+    grid-template-columns:28% 28% 28%;
+    grid-template-rows: 200px 200px;
+    gap: 45px; 
+    justify-content: center;
+}
+
+#results .content-photo .photo{   /*on définit la taile de la photo et la bordure*/
+    height: 124px;
+    width: 100%;
+    border: 5px #ffffff solid;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#results .items img{ /*bordure a l'image pour quelle épouse les courbes de la bordure*/
+    border-radius: 20px 20px 0px 0px;
+}
+
+#results .sousphoto{  /* la partie texte sous la photo: dimension fond bordure*/
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+    border: 5px #ffffff solid;
+}
+
+#results h4{
+    margin: 5px;
+    font-weight: 700 ;
+    font-size: 16px;
+}
+
+#results article{
+    font-weight: 400;
+    font-size: 14px;
+    margin:5px;
+}
+
+#results i{
+    margin: 3px 0px 2px 5px;
+    color: #0065FC;
+    height: 12px;
+    width: 12px;
+}
+
+#results span i{
+    color: #F2F2F2;
+}
+
+#results h3{
+    margin: 60px 0px 0px 4.5%;
+}
+
+/*fin des hebergement */
+/* début des pop */
+
+#results {
+    display:flex;
+    justify-content: space-between;
+ }
+
+#results .photo2 img{
+    width: 100%;    /*section qui met les photo a la bonne taille*/
+    height: 100%;
+    object-fit: cover;
+}
+
+#results .popular h2{
+    margin-left: 9%;
+}
+
+#results .popular h2 i{
+    height: 15.75px;
+    width: 18px;
+    color: #0065FC;
+    padding-left:17%;
+}
+
+.popular{
+    width: 29%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.popular .grospack2 {     /* on indique que le conteneur prendra 100% de la largeur*/
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 185px 185px 185px;
+}
+
+#results .photo2{   /*on définit la taile de la photo et la bordure*/
+    height: 134px;
+    border: 5px #ffffff solid;
+    border-radius: 20px 0px 0px 20px;
+    width : 45%;
+}
+
+#results .photo2 img{
+    border-radius: 20px 0px 0px 20px;
+}
+
+#results .sousphoto2{
+    width: 100%;
+    background-color: #ffffff;
+    border: 5px #ffffff solid;
+    border-radius: 0px 20px 20px 0px;
+    height: 134px;
+}
+
+#results .pack2 {
+    height: 134px;
+    display: flex;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1); 
+    border-radius: 20px;
+    margin-left: 9%;
+    width : 82%;
+}
+
+#results h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#results article{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#results .popular .grospack2 .pack2 .sousphoto2 i{
+    padding-top: 44px;
+}
+
+
+@media screen and (max-width: 1147px) {
+    #results {
+        margin: auto;
+    }
+
+    #results .items{     /* on indique que le conteneur prendra 100% de la largeur*/
+        width: 100%;
+        margin-bottom: 53px;
+    }
+
+    #results .popular{
+        width:100%;
+        height: 278px;
+    }
+
+    #results .popular h2 i{
+        margin-left: 46%;
+    }
+    
+    #results .popular .grospack2{          /* les vignettes passe en colone */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+
+    #results .pack2{             /* redimensionner les vignette*/
+        width: 29%;
+        margin-left: 0px;
+        
+    }
+
+    #results .sousphoto2 h4{         /* taile de l'écriture*/
+        font-size: 14px;
+    }
+
+    #results .sousphoto2 article{
+        font-size: 13px;
+        margin-bottom: auto;
+    }
+
+    #results {   /* on met en colone hebergement et populaire*/
+        display:flex;
+        flex-direction: column;
+    }
+
+    #results .containerphoto{  /*redimensionne le titre et la boite avec toutes les photos */
+        margin-bottom: 53px;
+        width: 100%;       /* on indique que le conteneur prendra 100% de la largeur*/
+    }
+
+    #results .popular h2{
+        margin-left: 4.5%;
+    }
+
+    #results h3{
+        margin-bottom: 46px ;
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+    body{
+        margin:0px;
+    }
+
+    #results {          /* deux boites "hebergement" et "populaire"*/ /*ici on va les retourner car on veut d'abord populaire puis hebergement */
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2.3em;
+    }
+
+    /*on commence par adapter populaire*/
+
+    #results .popular{
+        height: 580px;
+        border-radius: 0%;
+    }
+
+    #results .popular h2{
+        margin-left: 7.5%;
+    }
+    
+    #results .popular h2 i{
+        margin-left: 1%;
+    }
+
+    #results .popular .grospack2 {               /* les vignettes sont en colone*/
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #results .pack2{                   /* les vignettes ont de nouvelles dimensions*/
+        width: 334px;
+        margin: auto;
+        margin-bottom: 21px;
+        height : 144px;
+    }
+
+
+
+    #results .photo2{                 /* les photos ont de nouvelles dimensions*/
+        height:144px;
+        width : 137px
+    }
+
+    #results .sousphoto2{             /*texte sous les photos ont de nouvelles dimensions*/
+        height: 144px;
+    }
+
+    #results h2{
+        margin-left: 7.5%;
+    }
+    #results .items{            /* on change le fond du container*/
+        background-color: #ffffff;
+    }
+
+    #results .pack{
+        width: 334px;
+        margin: auto;
+    }
+
+    #results .content-photo { /* content-photo contient tout les blocs de chaque location.*/  /*ici toutes les vignettes vont revenir a la ligne si elle non plus de place */
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    #results .content-photo .photo{             /* dimension des photos */
+        width: 334px;
+        height: 124px;
+    }
+
+    #results h3{      /* on fait disparaitre le h3*/
+        display: none;
+    }
+
+    
+}

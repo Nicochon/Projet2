@@ -1,0 +1,122 @@
+/* search début*/
+#search h1{
+    font-size: 22px;
+}
+
+#search p{
+    font-size: 16px;
+}
+
+#search .recherche {    /*la marge qu questionnaire*/
+    width: 332px;
+    height:46px;
+    outline: none;
+}
+
+#search .containerrecherche1{
+    width: 100%;
+    height: 49px;
+}
+
+#search .containerrecherche, .containerrecherche1{  /*contient le i le questionnaire avec le bouton recherche*/
+    display: flex;
+    margin-bottom: 45px;
+}
+
+#search .containerrecherche i{  /*regles css pour les i dans le conteneurrecherche*/
+    width: 14px;
+    height: 16px;
+    padding: 17px 18px 15px 18px;
+    border: solid 1px #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    color:black;
+ }
+
+ #search .recherche1{   /*regles spécifique au bouton*/
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    border: solid 1px #F2F2F2;
+    padding: 13px 14px 19px 14px;
+    color:#ffffff;
+    position: relative;
+    bottom: 2px;
+    right: 5px;
+    font-family: "raleway";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#search .recherche2,.recherche{ /*recherche = input questionnaire recherche1 = input bouton */ 
+    border:solid 1px #F2F2F2;
+    font-size: 18px;
+}
+
+#search .containerrecherche1{    /*rendre invisible la partie recherche destiné au écran smartphone*/
+    display: none;
+}
+
+@media screen and (max-width:768px){
+
+    #search{
+        width: 375px;
+        display:flex;
+    }
+
+    #search .containerrecherche{ /*le containerrecherche représente la bar de recherche*/
+        display:none;    /*ici on veut le faire disparaitre au profit d'un autre. */
+    }
+
+    #search a{
+        display:inline-block;
+        width: auto;
+    }
+
+    #search .containerrecherche1{  /*c'est la bar de rechcerche crée uniquement pour le mobile */
+        display:flex;
+        margin: 36px auto 34px auto;
+        justify-content: center;
+
+    }
+
+    #search .containerrecherche1 i{  /*regles css pour les i dans la nouvelle bar de recherche mobile*/
+        width: 14px;
+        height: 16px;
+        padding: 17px 18px 15px 18px;
+        border: solid 1px #F2F2F2;
+        background-color: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+        color:black;
+     }
+
+     #search .recherche2{     /*la bar ou les gens peuvent taper la recherche */
+        width: 224px;
+        height: 46px;
+        border:solid 1px #F2F2F2;
+        font-size: 18px;
+    }
+
+    #search button {   /*regles spécifique au bouton*/
+        background-color: #0065FC;
+        border-radius: 0px 15px 15px 0;
+        margin-left: 0px;
+        border:solid 1px #F2F2F2;
+        font-size: 18px;
+        height:50px;
+        width: 50px;
+        position: relative;
+        right: 4px;
+        
+    }
+
+    #search .containerrecherche1 button i{     /*le nouveau bouton i la loupe */
+        color:#F2F2F2;
+        display: flex;
+        justify-content: center;
+        border:none;
+        padding:0px;
+        background-color: #1fe0; 
+        height: auto;
+        width: auto;
+    }
+}

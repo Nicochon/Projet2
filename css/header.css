@@ -1,0 +1,69 @@
+#header {  /*on selectionne la balise container dans le header */
+    display:flex;
+    justify-content: space-between;
+}
+
+#header .containernav{  /*containernav represente "hebergement et Activités*/ 
+    margin: 48px;
+}
+
+#header .containernav a{ /* selction des a dans les balise containernav du header*/
+    color:black;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;  /*pour enlever le soulignement */
+    margin: auto 77px auto auto;   /*pour les espacés de 77 px entre les deux*/
+
+}
+
+#header a{
+    padding-top:48px;
+}
+
+#header a:hover{   /* lorque la souris passe sur le lien a ici elle change de couleur */
+    color:#0065FC;
+    border-top: solid 1px #0065FC;
+}
+
+#header img{  /*les dimensions de mon logo*/
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px
+}
+
+@media screen and (max-width: 992px) {
+    #header a{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {    /*on passe les deux blocs qui compose le header en colonne*/
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .logo{       /*le logo doit etre centré sur la page */
+        display: flex;
+        justify-content: center;
+    }
+
+    #header .containernav {   /*on aligne hebergement et activités*/  
+        display: flex;
+        margin: 0;
+    }
+
+
+    #header .containernav a{                /*marge de 23px en bas */
+        padding-bottom: 23px;
+        border-bottom: solid 3px #f2f2f2;
+        margin-right: 0;
+        margin-left: 0;
+        width: 50%;
+        text-align: center;
+    }
+    #header .containernav a:hover{           /*au passage de la souris une bordure apparait en bas et non en haut */
+        border-top: none;
+        border-bottom: solid 3px #0065fc;
+    }
+}

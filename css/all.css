@@ -1,0 +1,27 @@
+body {
+    color: black;
+    font-family:"raleway";
+}
+
+.container{    /*container et l'ensemble des blocs de ma page*/
+    max-width: 1400px;    /*tous les blocs auront 1400px max*/
+    margin: auto;      /* pour centrer mes blocs sur la page*/
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin: auto;
+        max-width: 880px;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        margin: 0;
+    }
+
+    .container{     /*le conteneur qui divise toute ma page en bloc*/
+        justify-content: center;
+        max-width: 375px;
+    }
+}
