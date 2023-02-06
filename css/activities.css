@@ -3,6 +3,10 @@
     height: 100%;
     object-fit: cover;
 }
+#activities a{
+    text-decoration: none;
+    color: black;
+}
 #activities .containerphoto3{
     padding-top: 60px;
 }
