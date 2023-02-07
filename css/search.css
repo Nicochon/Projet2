@@ -59,8 +59,12 @@
 @media screen and (max-width:768px){
 
     #search{
-        width: 375px;
+        width: 100%;
         display:flex;
+    }
+
+    #search p,h1 {
+        margin: 5%
     }
 
     #search .containerrecherche{ /*le containerrecherche représente la bar de recherche*/
@@ -90,7 +94,7 @@
      }
 
      #search .recherche2{     /*la bar ou les gens peuvent taper la recherche */
-        width: 224px;
+        width: 70%;
         height: 46px;
         border:solid 1px #F2F2F2;
         font-size: 18px;
@@ -103,7 +107,7 @@
         border:solid 1px #F2F2F2;
         font-size: 18px;
         height:50px;
-        width: 50px;
+        width: 18%;
         position: relative;
         right: 4px;
         

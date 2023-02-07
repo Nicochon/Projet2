@@ -178,7 +178,8 @@
     }
 
     #results .popular h2 i{
-        margin-left: 46%;
+        margin-left: 65%;
+        padding-left:0px;
     }
     
     #results .popular .grospack2{          /* les vignettes passe en colone */
@@ -247,7 +248,7 @@
     }
     
     #results .popular h2 i{
-        margin-left: 1%;
+        margin-left: 22%;
     }
 
     #results .popular .grospack2 {               /* les vignettes sont en colone*/
@@ -257,7 +258,7 @@
     }
 
     #results .pack2{                   /* les vignettes ont de nouvelles dimensions*/
-        width: 334px;
+        width: 90%;
         margin: auto;
         margin-bottom: 21px;
         height : 144px;
@@ -282,7 +283,7 @@
     }
 
     #results .pack{
-        width: 334px;
+        width: 90%;
         margin: auto;
     }
 
@@ -292,7 +293,7 @@
     }
    
     #results .content-photo .photo{             /* dimension des photos */
-        width: 334px;
+        width: 100%;
         height: 124px;
     }
 

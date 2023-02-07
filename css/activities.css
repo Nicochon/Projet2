@@ -63,7 +63,7 @@
     }
 
     #activities .pack3{    
-        width: 334px;                /*re dimensionne le pack */
+        width: 90%;                /*re dimensionne le pack */
         height: 190px;
         margin-bottom: 24px;
         margin:auto auto 24px auto;
