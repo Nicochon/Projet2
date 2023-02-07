@@ -82,10 +82,8 @@
 @media screen and (max-width:768px){
 
     #filters .containerfiltres{
-        box-sizing:border-box;
-         max-width: 100%;
+        max-width: 500px;
         margin: auto;
-        padding-left: 15px;
     }
 
     #filters .containerfiltres .bigbox{    
@@ -107,5 +105,7 @@
         font-size: 11px; 
         display: inline-block;
         width: 65%;
+        padding: 10px 15px;
+        margin: 10px auto;
     } 
 }
